@@ -21,37 +21,44 @@
           class="flex flex-col items-center md:flex-row justify-between gap-5"
         >
           <div class="flex gap-3">
-            <i class="fa-solid fa-b"></i>
-            <i class="fa-solid fa-italic"></i>
-            <i class="fa-solid fa-underline"></i>
+            <i id="bold" class="fa-solid fa-b cursor-pointer"></i>
+            <i id="italic" class="fa-solid fa-italic cursor-pointer"></i>
+            <i id="underline" class="fa-solid fa-underline cursor-pointer"></i>
           </div>
 
           <div class="flex gap-5">
-            <i class="fa-solid fa-align-left"></i>
-            <i class="fa-solid fa-align-center"></i>
-            <i class="fa-solid fa-align-center"></i>
-            <i class="fa-solid fa-align-justify"></i>
+            <i id="left" class="fa-solid fa-align-left cursor-pointer"></i>
+            <i id="center" class="fa-solid fa-align-center cursor-pointer"></i>
+            <i id="right" class="fa-solid fa-align-right cursor-pointer"></i>
+            <i
+              id="justify"
+              class="fa-solid fa-align-justify cursor-pointer"
+            ></i>
           </div>
 
           <div class="flex gap-2">
-            <select class="w-10 rounded-sm outline-0">
-              <option>12</option>
-              <option>16</option>
-              <option>20</option>
+            <select id="select-size" class="w-10 rounded-sm outline-0">
+              <option id="size-12" value="12">12</option>
+              <option id="size-16" value="16">16</option>
+              <option id="size-20" value="20">20</option>
             </select>
             <select class="w-20 rounded-sm outline-0">
-                <option>Lato</option>
-                <option>Sans Serif</option>
-                <option>Work Sans</option>
+              <option>Lato</option>
+              <option>Sans Serif</option>
+              <option>Work Sans</option>
             </select>
             <input type="color" class="p-1 w-10 rounded-sm" />
           </div>
         </div>
 
         <hr class="border border-gray-600" />
-        
+
         <div>
-          <textarea rows="10" class="w-full outline-0 p-5"> </textarea>
+          <textarea
+            id="field"
+            rows="10"
+            class="w-full outline-0 p-5"
+          ></textarea>
         </div>
       </div>
     </section>
