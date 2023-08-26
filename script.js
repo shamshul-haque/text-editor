@@ -64,6 +64,16 @@ justify.addEventListener("click", function () {
 });
 
 const selectSize = document.getElementById("select-size");
-selectSize.addEventListener("change", function () {
-  const size12 = document.getElementById("size-12");
+selectSize.addEventListener("change", function (e) {
+  field.style.fontSize = e.target.value + "px";
+});
+
+const selectFont = document.getElementById("select-font");
+selectFont.addEventListener("change", function (e) {
+  field.style.fontFamily = e.target.value;
+});
+
+const selectColor = document.getElementById("select-color");
+selectColor.addEventListener("change", function (e) {
+  field.style.color = e.target.value;
 });
